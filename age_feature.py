@@ -4,11 +4,6 @@ import numpy as np
 from config import *
 from scipy.misc import imread, imresize, imsave
 
-# conf_path = 'configs/config.yml' #config path
-#   config.read(conf_path)          # load config
-
-#batch_images = sorted(glob('../DataSet/UTKFace-test/*.jpg'))
-
 class learn_age_feature(object):
 
     def __init__(self, config_path):
@@ -28,8 +23,6 @@ class learn_age_feature(object):
                 img = cv2.imread(i_img)
             except:
                 print(i_img)
-
-
 
             face = cv2.cvtColor(img, cv2.COLOR_BGR2RGB).astype(np.float32);
             for c_i in range(3):
