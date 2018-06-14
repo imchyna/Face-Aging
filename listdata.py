@@ -1,4 +1,5 @@
 import os
+import re
 path_dir = os.path.abspath('../DataSet/CASIA-WebFace')
 def GetFileList(dir):
     newDir = dir
